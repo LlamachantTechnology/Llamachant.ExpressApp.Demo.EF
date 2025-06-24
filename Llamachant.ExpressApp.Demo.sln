@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36212.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Llamachant.ExpressApp.Demo.Module", "Llamachant.ExpressApp.Demo.Module\Llamachant.ExpressApp.Demo.Module.csproj", "{7974618A-CB0E-1FE7-A9B0-4EF273A78EFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Llamachant.ExpressApp.Demo.Win", "Llamachant.ExpressApp.Demo.Win\Llamachant.ExpressApp.Demo.Win.csproj", "{9D279FE7-63E6-D7F6-4839-65F456A8420F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Llamachant.ExpressApp.Demo.Blazor.Server", "Llamachant.ExpressApp.Demo.Blazor.Server\Llamachant.ExpressApp.Demo.Blazor.Server.csproj", "{DBB91CB8-C436-DA31-EA2E-E963EA72977B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Llamachant.ExpressApp.Demo.WorkflowService", "Llamachant.ExpressApp.Demo.WorkflowService\Llamachant.ExpressApp.Demo.WorkflowService.csproj", "{973123EE-2B29-4D0A-9BAA-18C8F92B8AF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		EasyTest|Any CPU = EasyTest|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7974618A-CB0E-1FE7-A9B0-4EF273A78EFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7974618A-CB0E-1FE7-A9B0-4EF273A78EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7974618A-CB0E-1FE7-A9B0-4EF273A78EFA}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{7974618A-CB0E-1FE7-A9B0-4EF273A78EFA}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{7974618A-CB0E-1FE7-A9B0-4EF273A78EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7974618A-CB0E-1FE7-A9B0-4EF273A78EFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D279FE7-63E6-D7F6-4839-65F456A8420F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D279FE7-63E6-D7F6-4839-65F456A8420F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D279FE7-63E6-D7F6-4839-65F456A8420F}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{9D279FE7-63E6-D7F6-4839-65F456A8420F}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{9D279FE7-63E6-D7F6-4839-65F456A8420F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D279FE7-63E6-D7F6-4839-65F456A8420F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBB91CB8-C436-DA31-EA2E-E963EA72977B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBB91CB8-C436-DA31-EA2E-E963EA72977B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBB91CB8-C436-DA31-EA2E-E963EA72977B}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{DBB91CB8-C436-DA31-EA2E-E963EA72977B}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{DBB91CB8-C436-DA31-EA2E-E963EA72977B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBB91CB8-C436-DA31-EA2E-E963EA72977B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{973123EE-2B29-4D0A-9BAA-18C8F92B8AF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{973123EE-2B29-4D0A-9BAA-18C8F92B8AF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{973123EE-2B29-4D0A-9BAA-18C8F92B8AF4}.EasyTest|Any CPU.ActiveCfg = Release|Any CPU
+		{973123EE-2B29-4D0A-9BAA-18C8F92B8AF4}.EasyTest|Any CPU.Build.0 = Release|Any CPU
+		{973123EE-2B29-4D0A-9BAA-18C8F92B8AF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{973123EE-2B29-4D0A-9BAA-18C8F92B8AF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12F1CB1B-ED38-4B56-A1AA-507FA9E870A0}
+	EndGlobalSection
+EndGlobal

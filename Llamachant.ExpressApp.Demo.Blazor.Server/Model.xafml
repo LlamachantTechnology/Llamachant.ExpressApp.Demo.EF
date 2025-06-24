@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Options UIType="TabbedMDI"
+         RestoreTabbedMdiLayout="True"
+         ShowTabImage="True"
+         VirtualScrollingEnabled="True">
+  </Options>
+  <NavigationItems NavigationStyle="Accordion">
+  </NavigationItems>
+	<Views>
+		<ListView Id="Client_BillableHours_ListView" EditorTypeName="DevExpress.ExpressApp.Blazor.Editors.DxGridListEditor" />
+		<ListView Id="Invoice_BillableHours_ListView" EditorTypeName="DevExpress.ExpressApp.Blazor.Editors.DxGridListEditor" />
+	</Views>
+</Application>

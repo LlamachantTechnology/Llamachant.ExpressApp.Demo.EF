@@ -1,0 +1,86 @@
+<Project>
+	<PropertyGroup>
+		<DevExpressMajor>25.1.2</DevExpressMajor>
+		<DevExpressPre>-beta</DevExpressPre>
+		<DevExpressVersion>$(DevExpressMajor)$(DevExpressPre)</DevExpressVersion>
+		<LlamachantVersion>1</LlamachantVersion>
+		<LlamachantFrameworkVersion>25.1.2.1-beta9</LlamachantFrameworkVersion>
+		<LlamaLoggerVersion>[24.1.3,)</LlamaLoggerVersion>
+		<NetVersion>net9.0</NetVersion>
+	</PropertyGroup>
+	<PropertyGroup>
+		<Company>Llamachant Technology Ltd.</Company>
+		<Authors>$(Company)</Authors>
+		<Copyright>Copyright $([System.Char]::ConvertFromUtf32(169)) 2017-$([System.DateTime]::Now.Year) $(Company)</Copyright>
+		<AssemblyVersion>$(DevExpressMajor).$(LlamachantVersion)$(DevExpressPre)</AssemblyVersion>
+		<FileVersion>$(DevExpressMajor).$(LlamachantVersion)$(DevExpressPre)</FileVersion>
+		<Version>$(DevExpressMajor).$(LlamachantVersion)$(DevExpressPre)</Version>
+	</PropertyGroup>
+	<PropertyGroup>
+		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageVersion Include="Azure.Identity" Version="1.13.1" />
+		<PackageVersion Include="DevExpress.Drawing.Skia" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.AuditTrail.EFCore" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.Blazor" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.CloneObject" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.CodeAnalysis" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.ConditionalAppearance" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.Dashboards" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.Dashboards.Blazor" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.Dashboards.Win" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.EFCore" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.FileAttachment.Blazor" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.FileAttachment.Win" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.Objects" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.Office" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.Office.Blazor" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.Office.Win" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.ReportsV2" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.ReportsV2.Blazor" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.ReportsV2.Win" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.Scheduler" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.Scheduler.Blazor" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.Scheduler.Win" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.Security" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.Validation" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.Validation.Blazor" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.Validation.Win" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.ViewVariantsModule" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.Win" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.ExpressApp.Win.Design" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.Persistent.Base" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.Persistent.BaseImpl.EFCore" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.RichEdit.Export" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="DevExpress.Win.Design" Version="$(DevExpressVersion)" />
+		<PackageVersion Include="Llamachant.ExpressApp.AuditTrail" Version="$(LlamachantFrameworkVersion)" />
+		<PackageVersion Include="Llamachant.ExpressApp.AuditTrail.EF" Version="$(LlamachantFrameworkVersion)" />
+		<PackageVersion Include="Llamachant.ExpressApp.ConditionalAppearance.EF" Version="$(LlamachantFrameworkVersion)" />
+		<PackageVersion Include="Llamachant.ExpressApp.Diagnostics" Version="$(LlamachantFrameworkVersion)" />
+		<PackageVersion Include="Llamachant.ExpressApp.DragDrop.Blazor" Version="$(LlamachantFrameworkVersion)" />
+		<PackageVersion Include="Llamachant.ExpressApp.FileAttachments.AzureBlobStorage" Version="$(LlamachantFrameworkVersion)" />
+		<PackageVersion Include="Llamachant.ExpressApp.LlamaLogger" Version="$(LlamachantFrameworkVersion)" />
+		<PackageVersion Include="Llamachant.ExpressApp.Module" Version="$(LlamachantFrameworkVersion)" />
+		<PackageVersion Include="Llamachant.ExpressApp.Module.Blazor" Version="$(LlamachantFrameworkVersion)" />
+		<PackageVersion Include="Llamachant.ExpressApp.Module.Win" Version="$(LlamachantFrameworkVersion)" />
+		<PackageVersion Include="Llamachant.ExpressApp.Validation.EF" Version="$(LlamachantFrameworkVersion)" />
+		<PackageVersion Include="Llamachant.ExpressApp.Wizard" Version="$(LlamachantFrameworkVersion)" />
+		<PackageVersion Include="Llamachant.ExpressApp.Wizard.Blazor" Version="$(LlamachantFrameworkVersion)" />
+		<PackageVersion Include="Llamachant.ExpressApp.Wizard.Win" Version="$(LlamachantFrameworkVersion)" />
+		<PackageVersion Include="Llamachant.ExpressApp.Workflow" Version="$(LlamachantFrameworkVersion)" />
+		<PackageVersion Include="Llamachant.ExpressApp.Workflow.Service" Version="$(LlamachantFrameworkVersion)" />
+		<PackageVersion Include="Llamachant.ExpressApp.Workflow.EF" Version="$(LlamachantFrameworkVersion)" />
+		<PackageVersion Include="LlamaLogger.Microsoft.Extensions.Logging" Version="$(LlamachantFrameworkVersion)" />
+		<PackageVersion Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
+		<PackageVersion Include="Microsoft.CodeAnalysis.Common" Version="4.10.0" />
+		<PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.10.0" />
+		<PackageVersion Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.10.0" />
+		<PackageVersion Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+		<PackageVersion Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.11" />
+		<PackageVersion Include="Microsoft.EntityFrameworkCore.Proxies" Version="8.0.11" />
+		<PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.11" />
+		<PackageVersion Include="System.IdentityModel.Tokens.Jwt" Version="7.5.1" />
+	</ItemGroup>
+</Project>

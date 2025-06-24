@@ -1,0 +1,8 @@
+﻿<Application Logo="ExpressAppLogo">
+    <Options UIType="TabbedMDI" FormStyle="Ribbon" />
+    <NavigationItems NavigationStyle="Accordion" DefaultChildItemsDisplayStyle="List"/>
+	<Views>
+		<ListView Id="Client_BillableHours_ListView" EditorTypeName="DevExpress.ExpressApp.Win.Editors.GridListEditor" />
+		<ListView Id="Invoice_BillableHours_ListView" EditorTypeName="DevExpress.ExpressApp.Win.Editors.GridListEditor" />
+	</Views>
+</Application>

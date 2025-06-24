@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" ?>
+<Application Title="Llamachant.ExpressApp.Demo">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.EF.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+	<NavigationItems>
+		<Items>
+			<Item Id="Default">
+				<Items>
+					<Item Id="Client_ListView" Index="10" />
+					<Item Id="Contact_ListView" Index="20" Caption="Contact (Wizard)" />
+					<Item Id="ProgramOptions_ListView" Index="30" Caption="Program Options (SingletonBO)" />
+					<Item Id="AppearanceRuleData_ListView" Index="50" />
+					<Item Id="ValidationRuleData_ListView" Index="60" />
+					<Item Id="Event_ListView" Visible="False" />
+				</Items>
+			</Item>
+		</Items>
+	</NavigationItems>
+	<Options BoldTabsWithCounts="True" ShowCountsInTabs="True" AllowShowWorkflowInstances="True" CanRestoreFromAuditTrail="All" CanViewAuditTrail="All">
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+	<Views>
+		<ListView Id="ApplicationUser_ListView" Caption="Users" />
+		<DetailView Id="AuthenticationStandardLogonParameters_Blazor_DetailView">
+			<Items>
+				<StaticText Id="LogonText" Text="Enter your user name and password below. (Admin with no password)" />
+			</Items>
+		</DetailView>
+		<DetailView Id="AuthenticationStandardLogonParameters_DetailView">
+			<Items>
+				<StaticText Id="LogonText" Text="Welcome! Please enter your user name and password below. (Admin with no password)" />
+			</Items>
+		</DetailView>
+		<DetailView Id="AuthenticationStandardLogonParameters_Win_DetailView">
+			<Items>
+				<StaticText Id="LogonText" Text="&lt;size=14&gt;Log In to Your Account&lt;/size&gt;&lt;br /&gt;(Admin with no password)" />
+			</Items>
+		</DetailView>
+		<DetailView Id="BillableHours_DetailView">
+			<Layout>
+				<LayoutGroup Id="Main" RelativeSize="100">
+					<LayoutGroup Id="SimpleEditors" RelativeSize="100">
+						<LayoutGroup Id="BillableHours" RelativeSize="100">
+							<LayoutItem Id="Client" RelativeSize="4.222222222222222" Index="0" />
+							<LayoutItem Id="StartOn" ViewItem="StartOn" Index="1" RelativeSize="3.3333333333333335" IsNewNode="True" />
+							<LayoutItem Id="Duration" RelativeSize="3.3333333333333335" Index="2" />
+							<LayoutItem Id="EndOn" ViewItem="EndOn" Index="3" RelativeSize="3.3333333333333335" IsNewNode="True" />
+							<LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="4" RelativeSize="85.77777777777777" Caption="Billable Hours Summary" IsNewNode="True">
+								<LayoutItem Id="BillableHoursDescription" ViewItem="BillableHoursDescription" Index="0" RelativeSize="100" ShowCaption="False" IsNewNode="True" />
+							</LayoutGroup>
+							<LayoutItem Id="Invoice" RelativeSize="25.19083969465649" Removed="True" />
+						</LayoutGroup>
+						<LayoutGroup Id="Event" RelativeSize="81.77777777777777" Caption="Event" Removed="True">
+							<LayoutItem Id="EndOn" RelativeSize="100" Index="0" Removed="True" />
+							<LayoutItem Id="StartOn" RelativeSize="4.130162703379224" Removed="True" />
+						</LayoutGroup>
+					</LayoutGroup>
+					<LayoutGroup Id="Resources_Group" Removed="True" />
+				</LayoutGroup>
+			</Layout>
+		</DetailView>
+		<DetailView Id="Client_DetailView">
+			<Layout>
+				<LayoutGroup Id="Main" RelativeSize="100">
+					<LayoutGroup Id="SimpleEditors" RelativeSize="20.555555555555557">
+						<LayoutGroup Id="Client" RelativeSize="100">
+							<LayoutGroup Id="Client_col1" RelativeSize="49.71123944913372">
+								<LayoutItem Id="Name" RelativeSize="27.941176470588236" />
+								<LayoutItem Id="Address" RelativeSize="22.058823529411764" />
+								<LayoutItem Id="Balance" RelativeSize="22.058823529411764" />
+								<LayoutItem Id="EmailAddress" RelativeSize="27.941176470588236" />
+							</LayoutGroup>
+							<LayoutGroup Id="Client_col2" RelativeSize="50.28876055086628">
+								<LayoutItem Id="PhoneNumber" RelativeSize="27.941176470588236" />
+								<LayoutItem Id="Website" RelativeSize="22.058823529411764" />
+								<LayoutItem Id="TaxRate" RelativeSize="50" />
+							</LayoutGroup>
+						</LayoutGroup>
+					</LayoutGroup>
+					<TabbedGroup Id="Tabs" RelativeSize="66.22222222222223">
+						<LayoutGroup Id="Contacts" RelativeSize="100">
+							<LayoutItem Id="Contacts" RelativeSize="100" />
+						</LayoutGroup>
+						<LayoutGroup Id="BillableHours" RelativeSize="100">
+							<LayoutItem Id="BillableHours" RelativeSize="100" />
+						</LayoutGroup>
+						<LayoutGroup Id="Invoices" RelativeSize="100">
+							<LayoutItem Id="Invoices" RelativeSize="100" />
+						</LayoutGroup>
+						<LayoutGroup Id="Payments" RelativeSize="100">
+							<LayoutItem Id="Payments" RelativeSize="100" />
+						</LayoutGroup>
+						<LayoutGroup Id="ClientDocuments" RelativeSize="100">
+							<LayoutItem Id="ClientDocuments" RelativeSize="100" />
+						</LayoutGroup>
+					</TabbedGroup>
+					<LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="2" RelativeSize="13.222222222222221" Caption="ITrackedObject Details (See CustomBaseObject.cs)" Direction="Horizontal" IsNewNode="True">
+						<LayoutGroup Id="Auto2e3ae82d-7ebe-4346-a5db-3dcb8d19f9d5" ShowCaption="False" Caption="Auto2e3ae82d-7ebe-4346-a5db-3dcb8d19f9d5(25)" Index="0" RelativeSize="49.71123944913372" IsNewNode="True">
+							<LayoutItem Id="CreatedOn" ViewItem="CreatedOn" Index="0" RelativeSize="50" IsNewNode="True" />
+							<LayoutItem Id="CreatedBy" ViewItem="CreatedBy" Index="1" RelativeSize="50" IsNewNode="True" />
+						</LayoutGroup>
+						<LayoutGroup Id="Autof0d3abe0-0d87-4489-9e7c-44d502209fa9" ShowCaption="False" Caption="Autof0d3abe0-0d87-4489-9e7c-44d502209fa9(28)" Index="1" RelativeSize="50.28876055086628" IsNewNode="True">
+							<LayoutItem Id="ModifiedOn" ViewItem="ModifiedOn" Index="0" RelativeSize="50" IsNewNode="True" />
+							<LayoutItem Id="ModifiedBy" ViewItem="ModifiedBy" Index="1" RelativeSize="50" IsNewNode="True" />
+						</LayoutGroup>
+					</LayoutGroup>
+				</LayoutGroup>
+			</Layout>
+		</DetailView>
+		<DetailView Id="Contact_DetailView" ShowInWizard="NewOnly">
+			<Wizard WizardTitle="New Contact">
+				<WizardView Id="@1f526eb5-b50e-4160-973c-c7e78f741a1d" View="Contact_DetailView_WizardPage1" Name="Contact Details" Description="Enter basic contact details for this new contact." Index="10" ThrowValidationExceptions="True" IsNewNode="True" />
+				<WizardView Id="@1d55be79-3f69-4844-8922-3750b49ffe78" View="Contact_DetailView_WizardPage2" Name="Job Details" Description="Enter job details for this contact" Index="20" ThrowValidationExceptions="True" IsNewNode="True" />
+			</Wizard>
+		</DetailView>
+		<DetailView Id="Contact_DetailView_WizardPage1" CaptionColon=":" EnableCaptionColon="True" CaptionLocation="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" CaptionWordWrap="Default" EnableLayoutGroupImages="True" RequiredFieldMark="*" ClassName="Llamachant.ExpressApp.Demo.Module.BusinessObjects.Clients.Contact" IsNewNode="True">
+			<Items IsNewNode="True">
+				<PropertyEditor Id="EmailAddress" PropertyName="EmailAddress" IsNewNode="True" />
+				<PropertyEditor Id="FirstName" PropertyName="FirstName" IsNewNode="True" />
+				<PropertyEditor Id="LastName" PropertyName="LastName" IsNewNode="True" />
+				<PropertyEditor Id="PhoneNumber" PropertyName="PhoneNumber" IsNewNode="True" />
+			</Items>
+			<Layout IsNewNode="True">
+				<LayoutGroup Id="Main" Index="0" ShowCaption="False" RelativeSize="100" Direction="Vertical" IsNewNode="True">
+					<LayoutGroup Id="SimpleEditors" Index="0" ShowCaption="False" RelativeSize="100" Caption="SimpleEditors" IsNewNode="True">
+						<LayoutGroup Id="Item1" ShowCaption="False" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="Item1" IsNewNode="True">
+							<LayoutItem Id="FirstName" ViewItem="FirstName" Index="0" RelativeSize="3.2544378698224854" IsNewNode="True" />
+							<LayoutItem Id="LastName" ViewItem="LastName" Index="1" RelativeSize="2.366863905325444" IsNewNode="True" />
+							<LayoutItem Id="EmailAddress" ViewItem="EmailAddress" Index="2" RelativeSize="2.366863905325444" IsNewNode="True" />
+							<LayoutItem Id="PhoneNumber" ViewItem="PhoneNumber" Index="3" RelativeSize="92.01183431952663" IsNewNode="True" />
+						</LayoutGroup>
+					</LayoutGroup>
+				</LayoutGroup>
+			</Layout>
+		</DetailView>
+		<DetailView Id="Contact_DetailView_WizardPage2" ClassName="Llamachant.ExpressApp.Demo.Module.BusinessObjects.Clients.Contact" IsNewNode="True">
+			<Items IsNewNode="True">
+				<PropertyEditor Id="Client" PropertyName="Client" IsNewNode="True" />
+				<PropertyEditor Id="CreatedBy" PropertyName="CreatedBy" IsNewNode="True" />
+				<PropertyEditor Id="CreatedOn" PropertyName="CreatedOn" IsNewNode="True" />
+				<PropertyEditor Id="DeletedOn" PropertyName="DeletedOn" IsNewNode="True" />
+				<PropertyEditor Id="EmailAddress" PropertyName="EmailAddress" IsNewNode="True" />
+				<PropertyEditor Id="FirstName" PropertyName="FirstName" IsNewNode="True" />
+				<PropertyEditor Id="IsActive" PropertyName="IsActive" IsNewNode="True" />
+				<PropertyEditor Id="JobTitle" PropertyName="JobTitle" IsNewNode="True" />
+				<PropertyEditor Id="LastName" PropertyName="LastName" IsNewNode="True" />
+				<PropertyEditor Id="ModifiedOn" PropertyName="ModifiedOn" IsNewNode="True" />
+				<PropertyEditor Id="Oid" PropertyName="Oid" IsNewNode="True" />
+				<PropertyEditor Id="PhoneNumber" PropertyName="PhoneNumber" IsNewNode="True" />
+				<PropertyEditor Id="StartDate" PropertyName="StartDate" IsNewNode="True" />
+			</Items>
+			<Layout IsNewNode="True">
+				<LayoutGroup Id="Main" Index="0" ShowCaption="False" RelativeSize="100" IsNewNode="True">
+					<LayoutGroup Id="SimpleEditors" Index="0" ShowCaption="False" RelativeSize="100" Caption="SimpleEditors" IsNewNode="True">
+						<LayoutGroup Id="Item1" ShowCaption="False" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="Item1" IsNewNode="True">
+							<LayoutItem Id="Client" ViewItem="Client" Index="0" RelativeSize="4.217536071032186" IsNewNode="True" />
+							<LayoutItem Id="JobTitle" ViewItem="JobTitle" Index="1" RelativeSize="3.329633740288568" IsNewNode="True" />
+							<LayoutItem Id="StartDate" ViewItem="StartDate" Index="2" RelativeSize="3.329633740288568" IsNewNode="True" />
+							<LayoutItem Id="IsActive" ViewItem="IsActive" Index="3" RelativeSize="89.12319644839067" IsNewNode="True" />
+						</LayoutGroup>
+					</LayoutGroup>
+				</LayoutGroup>
+			</Layout>
+			<Wizard WizardTitle="New Contact Wizard" IsNewNode="True" />
+		</DetailView>
+		<DetailView Id="ProgramOptions_DetailView">
+			<Layout>
+				<LayoutGroup Id="Main" RelativeSize="100">
+					<LayoutGroup Id="SimpleEditors" RelativeSize="16.88888888888889">
+						<LayoutGroup Id="ProgramOptions" RelativeSize="100">
+							<LayoutGroup Id="ProgramOptions_col1" RelativeSize="49.97776789684304">
+								<LayoutItem Id="CompanyName" RelativeSize="35.84905660377358" />
+								<LayoutItem Id="Address" RelativeSize="28.30188679245283" />
+								<LayoutItem Id="PhoneNumber" RelativeSize="35.84905660377358" />
+								<LayoutItem Id="Website" RelativeSize="27.941176470588236" Removed="True" />
+							</LayoutGroup>
+							<LayoutGroup Id="ProgramOptions_col2" RelativeSize="50.02223210315696" Caption="ProgramOptions_col2">
+								<LayoutItem Id="Website" ViewItem="Website" Index="0" RelativeSize="35.84905660377358" IsNewNode="True" />
+								<LayoutItem Id="EmailAddress" RelativeSize="64.15094339622641" Index="1" />
+								<LayoutItem Id="AzureBlobStorageContainer" Removed="True" />
+								<LayoutItem Id="FileStorageType" RelativeSize="72.05882352941177" Removed="True" />
+							</LayoutGroup>
+						</LayoutGroup>
+					</LayoutGroup>
+					<LayoutGroup Id="SizeableEditors" RelativeSize="83.11111111111111">
+						<LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="File Attachment Storage Settings" IsNewNode="True">
+							<LayoutItem Id="FileStorageType" ViewItem="FileStorageType" Index="0" RelativeSize="5.413105413105413" IsNewNode="True" />
+							<LayoutItem Id="AzureBlobStorageCS" ViewItem="AzureBlobStorageCS" Index="1" RelativeSize="18.51851851851852" IsNewNode="True" />
+							<LayoutItem Id="AzureBlobStorageContainer" ViewItem="AzureBlobStorageContainer" Index="2" RelativeSize="4.273504273504273" IsNewNode="True" />
+							<LayoutItem Id="FileStorageRootFolder" ViewItem="FileStorageRootFolder" Index="3" RelativeSize="71.7948717948718" IsNewNode="True" />
+						</LayoutGroup>
+						<LayoutItem Id="FileStorageRootFolder" Index="2" RelativeSize="70.89136490250696" Removed="True" />
+						<LayoutItem Id="AzureBlobStorageCS" RelativeSize="24.930362116991642" Removed="True" />
+					</LayoutGroup>
+				</LayoutGroup>
+			</Layout>
+		</DetailView>
+	</Views>
+</Application>

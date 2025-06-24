@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>$(NetVersion)-windows</TargetFramework>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>ExpressApp.ico</ApplicationIcon>
+    <Deterministic>false</Deterministic>
+    <AssemblyVersion>1.0.*</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Configurations>Debug;Release;EasyTest</Configurations>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Using Include="DevExpress.ExpressApp.ListView" Alias="ListView" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Model.xafml" />
+    <None Remove="Images\Logo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model.xafml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Logo.svg" />
+    <EmbeddedResource Include="Images\ExpressAppLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.ExpressApp" />
+    <PackageReference Include="DevExpress.ExpressApp.CodeAnalysis" />
+    <PackageReference Include="DevExpress.ExpressApp.Dashboards.Win" />
+    <PackageReference Include="DevExpress.ExpressApp.EFCore" />
+    <PackageReference Include="DevExpress.ExpressApp.FileAttachment.Win" />
+    <PackageReference Include="DevExpress.ExpressApp.Office.Win" />
+    <PackageReference Include="DevExpress.ExpressApp.ReportsV2.Win" />
+    <PackageReference Include="DevExpress.ExpressApp.Scheduler.Win" />
+    <PackageReference Include="DevExpress.ExpressApp.Validation.Win" />
+    <PackageReference Include="DevExpress.ExpressApp.Win" />
+    <PackageReference Include="DevExpress.ExpressApp.Win.Design" />
+    <PackageReference Include="DevExpress.Persistent.Base" />
+    <PackageReference Include="DevExpress.Persistent.BaseImpl.EFCore" />
+    <PackageReference Include="DevExpress.RichEdit.Export" />
+    <PackageReference Include="DevExpress.Win.Design" />
+	  <PackageReference Include="Llamachant.ExpressApp.Module.Win" />
+	  <PackageReference Include="Llamachant.ExpressApp.Wizard.Win" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Llamachant.ExpressApp.Demo.Module\Llamachant.ExpressApp.Demo.Module.csproj" />
+  </ItemGroup>
+</Project>

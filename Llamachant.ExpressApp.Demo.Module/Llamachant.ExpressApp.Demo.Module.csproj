@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>$(NetVersion)</TargetFramework>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <Deterministic>false</Deterministic>
+    <AssemblyVersion>1.0.*</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Configurations>Debug;Release;EasyTest</Configurations>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Images\Client.svg" />
+    <None Remove="Images\Contact.svg" />
+    <None Remove="Images\Item.svg" />
+    <None Remove="Images\Llamachant.svg" />
+    <None Remove="Images\LlamaLogger.svg" />
+    <None Remove="Images\ProgramOptions.svg" />
+    <None Remove="Images\TaxRate.svg" />
+    <None Remove="Model.DesignedDiffs.xafml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Client.svg" />
+    <EmbeddedResource Include="Images\Contact.svg" />
+    <EmbeddedResource Include="Images\Item.svg" />
+    <EmbeddedResource Include="Images\Llamachant.svg" />
+    <EmbeddedResource Include="Images\LlamaLogger.svg" />
+    <EmbeddedResource Include="Images\ProgramOptions.svg" />
+    <EmbeddedResource Include="Images\TaxRate.svg" />
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.ExpressApp" />
+    <PackageReference Include="DevExpress.ExpressApp.AuditTrail.EFCore" />
+    <PackageReference Include="DevExpress.ExpressApp.CloneObject" />
+    <PackageReference Include="DevExpress.ExpressApp.CodeAnalysis" />
+    <PackageReference Include="DevExpress.ExpressApp.ConditionalAppearance" />
+    <PackageReference Include="DevExpress.ExpressApp.Dashboards" />
+    <PackageReference Include="DevExpress.ExpressApp.EFCore" />
+    <PackageReference Include="DevExpress.ExpressApp.Objects" />
+    <PackageReference Include="DevExpress.ExpressApp.Office" />
+    <PackageReference Include="DevExpress.ExpressApp.ReportsV2" />
+    <PackageReference Include="DevExpress.ExpressApp.Scheduler" />
+    <PackageReference Include="DevExpress.ExpressApp.Security" />
+    <PackageReference Include="DevExpress.ExpressApp.Validation" />
+    <PackageReference Include="DevExpress.ExpressApp.ViewVariantsModule" />
+    <PackageReference Include="DevExpress.Persistent.Base" />
+    <PackageReference Include="DevExpress.Persistent.BaseImpl.EFCore" />
+    <PackageReference Include="Azure.Identity" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" />
+    <PackageReference Include="Microsoft.Data.SqlClient" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" />
+
+	  <PackageReference Include="Llamachant.ExpressApp.AuditTrail.EF" />
+	  <PackageReference Include="Llamachant.ExpressApp.ConditionalAppearance.EF" />
+	  <PackageReference Include="Llamachant.ExpressApp.Diagnostics" />
+	  <PackageReference Include="Llamachant.ExpressApp.FileAttachments.AzureBlobStorage" />
+	  <PackageReference Include="Llamachant.ExpressApp.LlamaLogger" />
+	  <PackageReference Include="Llamachant.ExpressApp.Module" />
+	  <PackageReference Include="Llamachant.ExpressApp.Validation.EF" />
+	  <PackageReference Include="Llamachant.ExpressApp.Wizard" />
+	  <PackageReference Include="Llamachant.ExpressApp.Workflow" />
+	  <PackageReference Include="Llamachant.ExpressApp.Workflow.EF" />
+  </ItemGroup>
+</Project>
