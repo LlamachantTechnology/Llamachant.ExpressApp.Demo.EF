@@ -28,8 +28,10 @@ public abstract class CustomFileAttachment : CustomBaseObject, IFileAttachment
 
         if (options.FileStorageType == FileStorageType.FileSystem) //File System Path
             return Path.Combine(options.FileStorageRootFolder, @"TestAttachments\MyFiles\");
-        else //Azure Blob Storage
+        else if (options.FileStorageType == FileStorageType.Azure) //Azure Blob Storage
             return "TestAttachments/MyFiles/"; //Azure Blob Storage (Requires LlamachantFramework.FileAttachments.AzureBlobStorage Package)
+        else
+            throw new NotImplementedException($"There is no implementation for the {options.FileStorageType} storage type");
     }
 
     public void Clear()
@@ -58,7 +60,7 @@ public abstract class CustomFileAttachment : CustomBaseObject, IFileAttachment
 
             return new FileStorageFileAttachmentProcessor() { DeleteOnClear = true, OverwriteExistingFiles = false };
         }
-        else
+        else if (options.FileStorageType == FileStorageType.Azure)
         {
             //Azure Blob Storage (Requires LlamachantFramework.FileAttachments.AzureBlobStorage Package)
             string blobStorageCS = options.AzureBlobStorageCS;
@@ -69,5 +71,7 @@ public abstract class CustomFileAttachment : CustomBaseObject, IFileAttachment
 
             return new AzureBlobStorageFileAttachmentProcessor(blobStorageCS, containerName) { DeleteOnClear = false, OverwriteExistingFiles = false, PublicAccessType = Azure.Storage.Blobs.Models.PublicAccessType.None };
         }
+        else
+            throw new NotImplementedException($"There is no implementation for the {options.FileStorageType} storage type");
     }
 }
