@@ -4,6 +4,7 @@ using Llamachant.ExpressApp.Demo.Module.BusinessObjects.Common;
 
 namespace Llamachant.ExpressApp.Demo.Module.BusinessObjects.Billing;
 
+[ImageName("Currency")]
 [VisibleInReports(true)]
 [VisibleInDashboards(true)]
 public class Payment : CustomBaseObject

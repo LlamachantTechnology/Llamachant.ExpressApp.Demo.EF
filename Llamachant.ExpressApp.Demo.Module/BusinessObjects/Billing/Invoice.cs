@@ -3,10 +3,14 @@ using DevExpress.Persistent.Base;
 using Llamachant.ExpressApp.Demo.Module.BusinessObjects.Clients;
 using Llamachant.ExpressApp.Demo.Module.BusinessObjects.Common;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
+using static DevExpress.DataProcessing.InMemoryDataProcessor.AddSurrogateOperationAlgorithm;
 
 namespace Llamachant.ExpressApp.Demo.Module.BusinessObjects.Billing;
 
-[DefaultClassOptions]
+[ImageName("BO_Invoice")]
+[VisibleInReports(true)]
+[VisibleInDashboards(true)]
 public class Invoice : CustomBaseObject
 {
     public override void OnCreated()

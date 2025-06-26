@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace Llamachant.ExpressApp.Demo.Module.BusinessObjects.Billing;
 
+[ImageName("Item")]
 [NavigationItem("Setup")]
 public class Item : CustomBaseObject
 {

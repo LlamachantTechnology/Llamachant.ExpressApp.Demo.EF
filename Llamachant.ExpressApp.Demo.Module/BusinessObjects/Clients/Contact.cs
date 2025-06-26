@@ -4,6 +4,7 @@ using System.ComponentModel;
 
 namespace Llamachant.ExpressApp.Demo.Module.BusinessObjects.Clients;
 
+[ImageName("Contact")]
 [DefaultClassOptions]
 [DefaultProperty(nameof(FirstName))]
 public class Contact : CustomBaseObject
